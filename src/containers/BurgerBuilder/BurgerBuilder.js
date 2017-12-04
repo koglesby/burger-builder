@@ -4,18 +4,18 @@ import Aux from '../../hoc/Auxil';
 import BuildControls from '../../components/Burger/BuildControls/BuildControls';
 
 const INGREDIENT_PRICES = {
-  lettuce: 0.5,
+  lettuce: 0.25,
   bacon: 1,
   cheese: .5,
-  meat: 1
+  meat: .75
 };
 
 class BurgerBuilder extends Component {
   state = {
     ingredients: {
-      lettuce: 2,
+      lettuce: 0,
       bacon: 0,
-      cheese: 4,
+      cheese: 0,
       meat: 0
     },
     totalPrice: 4
@@ -45,19 +45,23 @@ class BurgerBuilder extends Component {
   };
 
   render () {
+    //copy the ingredients state
     const disabledInfo = {
       ...this.state.ingredients
     };
+    // changes the number value on the right to true or false based on if it is 0 or less
     for (let key in disabledInfo ) {
       disabledInfo[key] = disabledInfo[key] <= 0
     }
+    // ex: {lettuce: true, bacon: false, etc...}
     return (
       <Aux>
         <Burger ingredients={this.state.ingredients}/>
         <BuildControls
           ingredientAdded={this.addIngredientHandler}
           ingredientRemoved={this.removeIngredientHandler}
-          disabled={disabledInfo}/>
+          disabled={disabledInfo}
+          price={this.state.totalPrice}/>
       </Aux>
     );
   }
