@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="44662167-a317-4ba2-919a-f37d68824736" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/components/Burger/Burger.js" afterPath="$PROJECT_DIR$/src/components/Burger/Burger.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Burger/OrderSummary/OrderSummary.js" afterPath="$PROJECT_DIR$/src/components/Burger/OrderSummary/OrderSummary.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.js" afterPath="$PROJECT_DIR$/src/components/Layout/Layout.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Modal/Modal.js" afterPath="$PROJECT_DIR$/src/components/UI/Modal/Modal.js" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.css" afterPath="$PROJECT_DIR$/src/containers/Layout/Layout.css" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.js" afterPath="$PROJECT_DIR$/src/containers/Layout/Layout.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,7 +39,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderSummary.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OrderSummary.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Burger/OrderSummary/OrderSummary.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="175">
@@ -55,8 +54,8 @@
       <file leaf-file-name="Modal.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/UI/Modal/Modal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="46" lean-forward="false" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+            <state relative-caret-position="450">
+              <caret line="18" column="75" lean-forward="true" selection-start-line="18" selection-start-column="75" selection-end-line="18" selection-end-column="75" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -64,12 +63,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Layout.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Layout/Layout.js">
+      <file leaf-file-name="Layout.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/containers/Layout/Layout.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-              <folding />
+            <state relative-caret-position="375">
+              <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -122,6 +123,7 @@
         <option value="$PROJECT_DIR$/src/components/Burger/Burger.js" />
         <option value="$PROJECT_DIR$/src/components/UI/Modal/Modal.js" />
         <option value="$PROJECT_DIR$/src/components/Burger/OrderSummary/OrderSummary.js" />
+        <option value="$PROJECT_DIR$/src/containers/Layout/Layout.js" />
       </list>
     </option>
   </component>
@@ -188,59 +190,7 @@
               <item name="burger-builder" type="b2602c69:ProjectViewProjectNode" />
               <item name="burger-builder" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Burger" type="462c0819:PsiDirectoryNode" />
-              <item name="OrderSummary" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="burger-builder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="burger-builder" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="burger-builder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="burger-builder" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Navigation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="burger-builder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="burger-builder" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Navigation" type="462c0819:PsiDirectoryNode" />
-              <item name="NavigationItems" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="burger-builder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="burger-builder" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="UI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="burger-builder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="burger-builder" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="UI" type="462c0819:PsiDirectoryNode" />
-              <item name="Modal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="burger-builder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="burger-builder" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="containers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="burger-builder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="burger-builder" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-              <item name="BurgerBuilder" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -257,6 +207,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kevin\Desktop\Udemy\react-complete-guide\burger-builder\src\containers" />
       <recent name="C:\Users\kevin\Desktop\Udemy\react-complete-guide\burger-builder\src\components\Navigation\NavigationItems" />
       <recent name="C:\Users\kevin\Desktop\Udemy\react-complete-guide\burger-builder\src\assets\images" />
       <recent name="C:\Users\kevin\Desktop\Udemy\react-complete-guide\burger-builder\src\components\Navigation" />
@@ -290,12 +241,12 @@
       <updated>1511652034865</updated>
       <workItem from="1511652036074" duration="5864000" />
       <workItem from="1511907214208" duration="11809000" />
-      <workItem from="1512183131962" duration="42619000" />
+      <workItem from="1512183131962" duration="43016000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60292000" />
+    <option name="totallyTimeSpent" value="60689000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -394,17 +345,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Layout/Layout.js">
+    <entry file="file://$PROJECT_DIR$/src/containers/Layout/Layout.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
           <folding>
-            <element signature="e#0#39#0" expanded="false" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Layout/Layout.css">
+    <entry file="file://$PROJECT_DIR$/src/containers/Layout/Layout.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
@@ -600,7 +551,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Layout/Layout.css">
+    <entry file="file://$PROJECT_DIR$/src/containers/Layout/Layout.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
@@ -716,37 +667,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-300">
-          <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Layout/Layout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Burger/Burger.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="65" lean-forward="false" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/UI/Modal/Modal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="46" lean-forward="false" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -756,6 +681,34 @@
           <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/UI/Modal/Modal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="18" column="75" lean-forward="true" selection-start-line="18" selection-start-column="75" selection-end-line="18" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-300">
+          <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/Layout/Layout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
