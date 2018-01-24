@@ -5,6 +5,7 @@ import BuildControls from '../../components/Burger/BuildControls/BuildControls';
 import Modal from '../../components/UI/Modal/Modal';
 import OrderSummary from '../../components/Burger/OrderSummary/OrderSummary';
 import axios from '../../axios-orders';
+import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 import Spinner from '../../components/UI/Spinner/Spinner';
 
 const INGREDIENT_PRICES = {
@@ -60,7 +61,7 @@ class BurgerBuilder extends Component {
     updatedIngredients[type] = updatedCount;
     const priceDeduction = INGREDIENT_PRICES[type];
     const newPrice = this.state.totalPrice - priceDeduction;
-    this.setState({totalPrice: newPrice, ingredients: updatedIngredients})
+    this.setState({totalPrice: newPrice, ingredients: updatedIngredients});
     this.updatePurchasable(updatedIngredients);
   };
 
@@ -91,10 +92,10 @@ class BurgerBuilder extends Component {
     };
     axios.post('/orders.json', order)
       .then(response => {
-        this.setState({loading: false, purchasing: false})
+        this.setState({loading: false, ordering: false})
       })
       .catch(error => {
-        this.setState({loading: false, purchasing: false})
+        this.setState({loading: false, ordering: false})
       });
   };
 
@@ -112,7 +113,7 @@ class BurgerBuilder extends Component {
       price={this.state.totalPrice}
       ingredients={this.state.ingredients}
       orderCancelled={this.orderCancelHandler}
-      orderContinued={this.orderContinueHandler}/>
+      orderContinued={this.orderContinueHandler}/>;
 
     if (this.state.loading) {
       orderSummary = <Spinner/>
@@ -131,11 +132,10 @@ class BurgerBuilder extends Component {
           disabled={disabledInfo}
           purchasable={this.state.purchasable}
           price={this.state.totalPrice}
-          ordered={this.orderHandler}
-        />
+          ordered={this.orderHandler}/>
       </Aux>
     );
   }
 }
 
-export default BurgerBuilder;
+export default withErrorHandler(BurgerBuilder, axios);
