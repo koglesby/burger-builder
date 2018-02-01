@@ -26,6 +26,7 @@ class BurgerBuilder extends Component {
   };
 
   componentDidMount () {
+    console.log(this.props);
     axios.get('https://koglesby-react-burger-builder.firebaseio.com/ingredients.json')
       .then(response => {
         this.setState({ingredients: response.data})
@@ -80,29 +81,31 @@ class BurgerBuilder extends Component {
   };
 
   orderContinueHandler = () => {
-    this.setState({loading: true});
-    // alert('you continue');
-    const order = {
-      ingredients: this.state.ingredients,
-      price: this.state.totalPrice,
-      customer: {
-        name: 'Kevin',
-        address: {
-          street: 'test st.',
-          zipCode: '63791',
-          country: 'United States'
-        },
-        email: 'test@test.com'
-      },
-      deliveryMethod: 'fastest'
-    };
-    axios.post('/orders.json', order)
-      .then(response => {
-        this.setState({loading: false, ordering: false})
-      })
-      .catch(error => {
-        this.setState({loading: false, ordering: false})
-      });
+
+    // this.setState({loading: true});
+    // // alert('you continue');
+    // const order = {
+    //   ingredients: this.state.ingredients,
+    //   price: this.state.totalPrice,
+    //   customer: {
+    //     name: 'Kevin',
+    //     address: {
+    //       street: 'test st.',
+    //       zipCode: '63791',
+    //       country: 'United States'
+    //     },
+    //     email: 'test@test.com'
+    //   },
+    //   deliveryMethod: 'fastest'
+    // };
+    // axios.post('/orders.json', order)
+    //   .then(response => {
+    //     this.setState({loading: false, ordering: false})
+    //   })
+    //   .catch(error => {
+    //     this.setState({loading: false, ordering: false})
+    //   });
+    this.props.history.push('/checkout');
   };
 
   render () {

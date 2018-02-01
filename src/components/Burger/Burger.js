@@ -3,6 +3,7 @@ import classes from './Burger.css';
 import BurgerIngredient from './BurgerIngredient/BurgerIngredient';
 
 const burger = (props) => {
+  console.log(props);
   // console.log('object keys' + Object.keys(props.ingredients));
   let transformedIngredients = Object.keys(props.ingredients)
   // starts as an array of the keys of props.ingredients ( [lettuce, bacon, cheese, meat] )
@@ -31,4 +32,4 @@ const burger = (props) => {
   );
 };
 
-export default burger
+export default burger;
