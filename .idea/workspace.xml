@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="44662167-a317-4ba2-919a-f37d68824736" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Input/Input.js" afterPath="$PROJECT_DIR$/src/components/UI/Input/Input.js" />
       <change beforePath="$PROJECT_DIR$/src/containers/Checkout/ContactData/ContactData.js" afterPath="$PROJECT_DIR$/src/containers/Checkout/ContactData/ContactData.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,8 +20,8 @@
       <file leaf-file-name="ContactData.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/containers/Checkout/ContactData/ContactData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="86" column="6" lean-forward="true" selection-start-line="86" selection-start-column="6" selection-end-line="86" selection-end-column="6" />
+            <state relative-caret-position="275">
+              <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -204,8 +203,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="246" />
-    <option name="y" value="182" />
+    <option name="x" value="914" />
+    <option name="y" value="572" />
     <option name="width" value="1718" />
     <option name="height" value="1036" />
   </component>
@@ -362,15 +361,15 @@
       <workItem from="1511907214208" duration="11809000" />
       <workItem from="1512183131962" duration="43755000" />
       <workItem from="1516655965916" duration="15199000" />
-      <workItem from="1517349167675" duration="25334000" />
+      <workItem from="1517349167675" duration="25636000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101961000" />
+    <option name="totallyTimeSpent" value="102263000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="246" y="182" width="1718" height="1036" extended-state="0" />
+    <frame x="914" y="572" width="1718" height="1036" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21432872" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -830,8 +829,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/Checkout/ContactData/ContactData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="86" column="6" lean-forward="true" selection-start-line="86" selection-start-column="6" selection-end-line="86" selection-end-column="6" />
+        <state relative-caret-position="275">
+          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
