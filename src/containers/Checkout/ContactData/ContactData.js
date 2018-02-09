@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {connect} from 'react-redux';
 import Button from '../../../components/UI/Button/Button';
 import classes from './ContactData.css';
 import axios from '../../../axios-orders';
@@ -148,7 +149,7 @@ class ContactData extends Component {
     console.log(updatedFormElement);
 
     let formIsValid = true;
-    for (let inputIdentifiers in updatedOrderForm) {
+    for (let inputIdentifier in updatedOrderForm) {
       formIsValid = updatedOrderForm[inputIdentifier].valid && formIsValid;
     }
     this.setState({orderForm: updatedOrderForm, formIsValid: formIsValid});
@@ -190,4 +191,11 @@ class ContactData extends Component {
   }
 }
 
-export default ContactData;
+const mapStateToProps = state => {
+  return {
+    ingredients: state.ingredients,
+    price: state.totalPrice
+  }
+};
+
+export default connect(mapStateToProps)(ContactData);
