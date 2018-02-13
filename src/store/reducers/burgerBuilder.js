@@ -16,13 +16,6 @@ const INGREDIENT_PRICES = {
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case actionTypes.ADD_INGREDIENT:
-      // const oldCount = this.state.ingredients[type];
-      // const updatedCount = oldCount + 1;
-      // const updatedIngredients = {...this.state.ingredients};
-      // updatedIngredients[type] = updatedCount;
-      // const priceAddition = INGREDIENT_PRICES[type];
-      // const newPrice = this.state.totalPrice + priceAddition;
-
       return {
       //   this.setState({totalPrice: newPrice, ingredients: updatedIngredients});
       // this.updatePurchasable(updatedIngredients);
@@ -52,6 +45,7 @@ const reducer = (state = initialState, action) => {
           cheese: action.ingredients.cheese,
           meat: action.ingredients.meat
         },
+        totalPrice: 4,
         error: false
       };
     case actionTypes.FETCH_INGREDIENTS_FAILED:
